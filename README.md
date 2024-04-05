@@ -23,39 +23,39 @@
 
 **Ответ**</br>
   Использовал команду ```git show --pretty="%H: %s" --name-only aefea``` вместо ```git show aefea``` что бы сократить вывод.</br>
-![git show](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/5fa0711e-d54e-4b00-b059-cdcef9bfc438)
+![git show](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/5fa0711e-d54e-4b00-b059-cdcef9bfc438)</br>
 
 2. Ответьте на вопросы.
 
 * Какому тегу соответствует коммит `85024d3`?
 **Ответ**</br>
   Использовал команду  ```git log -1 85024d3```.</br>
-![git log85](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/7086e39a-7f2f-4131-a15b-9b8e6804f5e5)
+![git log85](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/7086e39a-7f2f-4131-a15b-9b8e6804f5e5)</br>
   
 * Сколько родителей у коммита `b8d720`? Напишите их хеши.
 **Ответ**</br>
   Можно найти информацию о родителях в выводе команды ```git log -1 b8d720```, я спользовал команду ```git show --pretty=format:%P b8d720``` для более точно й информации. Родителей два, их хеши:</br>56cd7859e05c36c06b56d013b55a252d0bb7e158 </br>9ea88f22fc6269854151c571162c5bcf958bee2b</br>
-  ![хеши](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/bbb183b3-f434-4925-b37a-d85776c299f1)
+  ![хеши](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/bbb183b3-f434-4925-b37a-d85776c299f1)</br>
 
 * Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
 **Ответ**</br>
   Использовал команду ```git log v0.12.23..v0.12.24 --pretty=format:"%H: %s"```</br>
-![теги v 012 23](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/4dec55f8-86e8-4d8b-b684-58023c1228c2)
+![теги v 012 23](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/4dec55f8-86e8-4d8b-b684-58023c1228c2)</br>
   
 * Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так:  `func providerSource(...)` (вместо троеточия перечислены аргументы).
 **Ответ**</br>
   Использовал команду ```git log -S'providerSource' --pretty=format:"%H %cd" | tail -n 1```</br>
- ![git log provider](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/9e9a2573-172a-461c-9403-b9282ac81f13)
+ ![git log provider](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/9e9a2573-172a-461c-9403-b9282ac81f13)</br>
  
 Найдите все коммиты, в которых была изменена функция `globalPluginDirs`.
 **Ответ**</br>
   Ответ будет содержаться в выводе команды ```git log -GglobalPluginDirs --stat```.</br>
-![git global](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/c0ee895e-8aff-4be5-9182-496a2d2adb2d)
+![git global](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/c0ee895e-8aff-4be5-9182-496a2d2adb2d)</br>
 
 * Кто автор функции `synchronizedWriters`?
 **Ответ**</br>
   У этой функции два автора:  James Bardin и Martin Atkins. ```git log -S synchronizedWriters --pretty=format:"%h %an"```</br>
-![автор](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/6f0e7434-0c1f-48e5-92ea-98474c425c57)
+![автор](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/6f0e7434-0c1f-48e5-92ea-98474c425c57)</br>
 
 *В качестве решения ответьте на вопросы и опишите, как были получены эти ответы.*
 
