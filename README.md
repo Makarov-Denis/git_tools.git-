@@ -40,9 +40,11 @@
 ![хеши](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/bbb183b3-f434-4925-b37a-d85776c299f1) </br>
 
 * Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
+  
 **Ответ**</br>
 
   Использовал команду ```git log v0.12.23..v0.12.24 --pretty=format:"%H: %s"```</br>
+  
 ![теги v 012 23](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/4dec55f8-86e8-4d8b-b684-58023c1228c2) </br>
   
 * Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так:  `func providerSource(...)` (вместо троеточия перечислены аргументы).
@@ -50,7 +52,7 @@
 **Ответ**</br>
 
   Использовал команду ```git log -S'providerSource' --pretty=format:"%H %cd" | tail -n 1```</br>
- ![git log provider](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/9e9a2573-172a-461c-9403-b9282ac81f13) </br>
+![git log provider](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/9e9a2573-172a-461c-9403-b9282ac81f13) </br>
  
 Найдите все коммиты, в которых была изменена функция `globalPluginDirs`.
 
