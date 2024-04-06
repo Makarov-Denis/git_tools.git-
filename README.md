@@ -42,7 +42,6 @@
 * Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
   
 **Ответ**</br>
-
   Использовал команду ```git log v0.12.23..v0.12.24 --pretty=format:"%H: %s"```</br>
   
 ![теги v 012 23](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/4dec55f8-86e8-4d8b-b684-58023c1228c2) </br>
@@ -50,21 +49,18 @@
 * Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так:  `func providerSource(...)` (вместо троеточия перечислены аргументы).
   
 **Ответ**</br>
-
   Использовал команду ```git log -S'providerSource' --pretty=format:"%H %cd" | tail -n 1```</br>
 ![git log provider](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/9e9a2573-172a-461c-9403-b9282ac81f13) </br>
  
 Найдите все коммиты, в которых была изменена функция `globalPluginDirs`.
 
 **Ответ**</br>
-
   Ответ будет содержаться в выводе команды ```git log -GglobalPluginDirs --stat```.</br>
 ![git global](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/c0ee895e-8aff-4be5-9182-496a2d2adb2d) </br>
 
 * Кто автор функции `synchronizedWriters`?
   
 **Ответ**</br>
-
   У этой функции два автора:  James Bardin и Martin Atkins. ```git log -S synchronizedWriters --pretty=format:"%h %an"``` </br>
 ![автор](https://github.com/Makarov-Denis/git_tools.git1/assets/148921246/6f0e7434-0c1f-48e5-92ea-98474c425c57) </br>
 
